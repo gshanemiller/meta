@@ -15,10 +15,9 @@
 # build code
 ./build
 
-# run code
-./run
-
 # sample output
+```
+./run
 generating 10000 data points ...
 LA expected about 50 pct or about 5000
 5089
@@ -26,3 +25,4 @@ NY expected about 33 pct or about 3333
 3239
 SF expected about 17 pct or about 1667
 1672
+```
