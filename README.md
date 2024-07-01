@@ -27,12 +27,12 @@ SF expected about 17 pct or about 1667
 
 # Algorithm Performance
 Storage is O(n):
-    * O(n) in size of city array
-    * O(n) in size of population array
-    * O(n) in helper array for proability weight
+  * O(n) in size of city array
+  * O(n) in size of population array
+  * O(n) in helper array for proability weight
 
 Runtime is:
-    * O(n)
+  * O(n)
 
 # Algorithm Discussion
 **One Time Work**: A helper array is created such the ith entry covers a range of the unit interval equal to `city[i]/T`. So given `city={"LA", "NY", "SF"}, population={30,20,10}` the code computes `d_weight={0.5, 0.83, 1.0]`. 
