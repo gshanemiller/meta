@@ -35,7 +35,7 @@ Runtime is:
     * O(n)
 
 # Algorithm Discussion
-**One Time Work**: A helper array is created such the ith entry covers a range of the unit interval equal to `city[i]/T`. So given `city={"LA", "NY", "SF"}, population={30,20,10}` the code computes `d_weight={0.5, 0.83, 1,0]`. 
+**One Time Work**: A helper array is created such the ith entry covers a range of the unit interval equal to `city[i]/T`. So given `city={"LA", "NY", "SF"}, population={30,20,10}` the code computes `d_weight={0.5, 0.83, 1.0]`. 
 
 In this way
 
