@@ -35,11 +35,13 @@ Runtime is:
     * O(n)
 
 # Algorithm Discussion
-**One Time Work**: A helper array is created such the ith entry covers a range of the unit interval equal to `city[i]/T`. So given `city={"LA", "NY", "SF"}, population={30,20,10}` the code computes `d_weight={0.5, 0.83, 1,0]`. In this way half:
+**One Time Work**: A helper array is created such the ith entry covers a range of the unit interval equal to `city[i]/T`. So given `city={"LA", "NY", "SF"}, population={30,20,10}` the code computes `d_weight={0.5, 0.83, 1,0]`. 
 
-    * the unit interval `[0, 0.5]` corresponds to city 0,
+In this way
+
+    * half the unit interval `[0, 0.5]` corresponds to city 0,
     * `[0.5, .83]` or `.83333-0.5=0.3333` or 1/3rd for city one
+    * etc.
     * remainder for the last city.
 
 When `print()` is run, a uniform random number is drawn from `[0,1]` and is used to see which index it's less than in `d_weight`
-
