@@ -8,7 +8,7 @@
 
 **Non-functional Performance**: print will be call millions of times. It should be performant.
 
-**Example**: city={NY,SF,LA}; population={20,10,30} e.g. LA popuation is 30. print() should write 'LA' to stdout 1/2th of the time since 30/T = 30/60 = 1/2.
+**Example**: city={NY,SF,LA}; population={20,10,30} e.g. LA popuation is 30. print() should write 'LA' to stdout 1/2 of the time since 30/T = 30/60 = 1/2.
 
 **Assumption**: The input city, population arrays must descending sorted so highest population city at index 0. This can be worked around by a quicksort O(n log n) on both arrays together.
 
