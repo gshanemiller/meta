@@ -3,6 +3,8 @@
 echo "generating 10000 data points ..."
 ./meta 1>data.txt
 
+echo "city={"LA", "NY", "SF"}, population={30,20,10}"
+echo
 echo "LA expected about 50 pct or about 5000"
 grep LA data.txt | wc -l
 echo "NY expected about 33 pct or about 3333"

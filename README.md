@@ -17,12 +17,14 @@
 ./build
 ./run
 generating 10000 data points ...
+city={LA, NY, SF}, population={30,20,10}
+
 LA expected about 50 pct or about 5000
-5089
+5022
 NY expected about 33 pct or about 3333
-3239
+3331
 SF expected about 17 pct or about 1667
-1672
+1647
 ```
 
 # Algorithm Performance
@@ -32,7 +34,8 @@ Storage is O(n):
   * O(n) in helper array for proability weight
 
 Runtime is:
-  * O(n)
+  * Worst case O(n)
+  * Average case is O(n) with but with a constant k on n k~1/3.
 
 # Algorithm Discussion
 **One Time Work**: A helper array is created such the ith entry covers a range of the unit interval equal to `city[i]/T`. So given `city={"LA", "NY", "SF"}, population={30,20,10}` the code computes `d_weight={0.5, 0.83, 1.0]`. 
