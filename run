@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "generating 10000 data points ..."
+./meta 1>data.txt
+
+echo "LA expected about 50 pct or about 5000"
+grep LA data.txt | wc -l
+echo "NY expected about 33 pct or about 3333"
+grep NY data.txt | wc -l
+echo "SF expected about 17 pct or about 1667"
+grep SF data.txt | wc -l

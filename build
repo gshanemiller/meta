@@ -1,0 +1,2 @@
+#!/bin/bash
+g++ -O3 -g meta.cpp -o meta
