@@ -38,7 +38,7 @@ CityPop::CityPop(double total, const std::vector<std::string>& city, const std::
 void CityPop::print() {
   const double sample = d_dist(d_gen);
   for (u_int64_t i=0; i<d_weight.size(); ++i) {
-    if (sample<=d_weight[i]) {
+    if (sample<d_weight[i]) {
       printf("%s\n", d_city[i].c_str());
       return;
     }
